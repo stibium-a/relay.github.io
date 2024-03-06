@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Relay</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <a class="logo" href="#">
+              <img class="logo-img" src="./images/logo.svg" alt="logo">
+            </a>
+            <nav class="nav">
+
+              <div class="login-box login-box--mobile">
+                <button class="nav-btn login-btn open-modal-btn" data-popupName="popup-login">Login</button>
+                <button class="nav-btn sign-up-btn open-modal-btn active" data-popupName="popup-signUp">Sign up</button>
+              </div>
+              
+                <ul class="nav__list">
+                  <li class="nav-item nav-item--has-subMenu">
+                    <a class="nav-link" href="#">What is Relay</a>
+                    <i class="fa-solid fa-angle-down menu-arrow"></i>
+                    <div class="sub-menu-box">
+                      <ul class="sub-menu-list">
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Relay is good</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Relay is very good</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Relay the best</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item nav-item--has-subMenu">
+                    <a class="nav-link" href="#">Accountants & Bookkeepers</a>
+                    <i class="fa-solid fa-angle-down menu-arrow"></i>
+                    <div class="sub-menu-box">
+                      <ul class="sub-menu-list">
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Accountants</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Bookkeepers</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Someone else</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item nav-item--has-subMenu">
+                    <a class="nav-link" href="#">Resources</a>
+                    <i class="fa-solid fa-angle-down menu-arrow"></i>
+                    <div class="sub-menu-box">
+                      <ul class="sub-menu-list">
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Resources-1</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Resources-2</a>
+                        </li>
+                        <li class="sub-menu__item">
+                          <a class="sub-menu__link" href="#">Resources-3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                  </li>
+                </ul>
+              
+            </nav>
+
+            <button class="menu-toggler-btn">
+              <span class="icon-menu__line line-1"></span>
+              <span class="icon-menu__line line-2"></span>
+              <span class="icon-menu__line line-3"></span>
+              <span class="icon-menu__line line-4"></span>
+            </button>
+            <div class="login-box login-box--desctop">
+              <button class="nav-btn login-btn open-modal-btn" data-popupName="popup-login">Login</button>
+              <button class="nav-btn sign-up-btn open-modal-btn active" data-popupName="popup-signUp">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__content">
+        <div class="container header__content-container">
+          <div class="header__content-inner">
+            <div class="header__content-item header__content-item--main-content">
+              <p class="welcome">
+                Welcome to Relay
+              </p>
+              <h1 class="title">
+                Keeping your business on the money
+              </h1>
+              <p class="header__description">
+                Relay’s online banking and money management platform puts you in complete control of your cash flow.
+              </p>
+              <buton class="act-btn header__content-btn">
+                Bank with Relay
+              </buton>
+              <p class="header__content-warning">
+                Relay is a financial technology company, not a bank. Banking services provided by Thread Bank; Member
+                FDIC.
+                The Relay Visa® Debit Card is issued by Thread Bank pursuant to a license from Visa U.S.A. Inc. and may
+                be
+                used everywhere Visa® debit cards are accepted.
+              </p>
+            </div>
+            <div class="header__content-item header__content-item--info-blocks">
+              <div class="header__info-box">
+                <div class="header__info-item header__info-item--business">
+                  <a class="header__info-link--business" href="#">
+                    For small businesses
+                  </a>
+                  <p class="header__info-text--business">
+                    Banking that uncomplicates your finances.
+                  </p>
+                </div>
+                <div class="header__info-item header__info-item--accountants">
+                  <a class="header__info-link--accountants" href="#">
+                    For accountants & bookkeepers
+                  </a>
+                  <p class="header__info-text--accountants">
+                    Client banking that works with your tech stack.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="popup popup-login">
+
+      <div class="popup-inner popup-login-inner">
+
+        <button class="close-modal-btn" aria-label="close"></button>
+
+        <div class="popup-login-content">
+          <h3 class="popup-login-title">Login</h3>
+
+          <form class="login-form">
+            <label class="login-label">
+              Login
+              <input class="form-input login-input" type="text" name="userLogin" placeholder="Enter login" required>
+            </label>
+            <label class="login-label">
+              Password
+              <input class="form-input pass-input" type="password" name="userPass" placeholder="Enter password"
+                required>
+            </label>
+
+            <button class="btn form-btn form-btn-login" type="submit">login</button>
+            <button class="btn form-btn" type="reset">clear</button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="popup popup-signUp">
+
+      <div class="popup-inner popup-signUp-inner">
+
+        <button class="close-modal-btn" aria-label="close"></button>
+
+        <div class="popup-signUp-content">
+          <form class="sign-up-form">
+
+            <h3 class="sign-up-title">sign up</h3>
+
+            <label class="sign-up-label">
+              <p class="sign-up-text">User login</p>
+              <input class="form-input sign-up-input" type="text" placeholder="Enter your login" required>
+            </label>
+
+            <label class="sign-up-label">
+              <p class="sign-up-text">Password</p>
+              <input class="form-input sign-up-input" type="password" placeholder="Enter your password" required>
+            </label>
+
+            <label class="sign-up-label">
+              <p class="sign-up-text">Repeat password</p>
+              <input class="form-input sign-up-input" type="password" placeholder="Repeat you password" required>
+            </label>
+
+            <label class="sign-up-label">
+              <p class="sign-up-text">Email</p>
+              <input class="form-input sign-up-input" type="email" placeholder="Enter your email" required>
+            </label>
+
+            <button class="btn form-btn sign-up-form-btn">sign up</button>
+            <button class="btn form-btn clear-sign-up-form-btn">clear</button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+    <div class="ticker-box">
+      <div class="ticker">
+        <div class="ticker-wrapper">
+
+          <div class="ticker-item">
+
+            <div class="ticker-content">
+              <img class="ticker-content-img" src="./images/ticker-1.png" alt="truePilot">
+            </div>
+
+            <div class="ticker-content">
+              <img class="ticker-content-img" src="./images/ticker-2.png" alt="insured">
+              <p class="ticker-content-text">
+                FDIC insured up to $250k
+              </p>
+            </div>
+
+            <div class="ticker-content">
+              <img class="ticker-content-img" src="./images/ticker-3.png" alt="zero liability">
+              <p class="ticker-content-text">
+                Visa® Zero Liability Protection
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="decor-box">
+      <picture class="decor-picture-box">
+        <source type="image/avif" srcset="./images/devices-picture.avif">
+        <img class="decor-image" src="./images/devices-picture.jpeg" loading="lazy" alt="devices">
+      </picture>
+    </div>
+    <section class="beyond-business">
+      <div class="container">
+        <div class="beyond-business__inner">
+          <h2 class="section-title beyond-business__title">
+            Beyond the business banking basics
+          </h2>
+          <div class="beyond-business__items-box">
+            <div class="beyond-business__item">
+              <img class="beyond-business__icon" src="./images/beyond-business-icon.png" alt="icon">
+              <p class="beyond-business__text">
+                No account fees, overdraft fees or minimum balances
+              </p>
+            </div>
+            <div class="beyond-business__item">
+              <img class="beyond-business__icon" src="./images/beyond-business-icon.png" alt="icon">
+              <p class="beyond-business__text">
+                Up to 20 individual checking accounts
+              </p>
+            </div>
+            <div class="beyond-business__item">
+              <img class="beyond-business__icon" src="./images/beyond-business-icon.png" alt="icon">
+              <p class="beyond-business__text">
+                50 virtual or physical Visa® debit cards
+              </p>
+            </div>
+            <div class="beyond-business__item">
+              <img class="beyond-business__icon" src="./images/beyond-business-icon.png" alt="icon">
+              <p class="beyond-business__text">
+                Payments via ACH and wire (checks coming soon)
+              </p>
+            </div>
+            <div class="beyond-business__item">
+              <img class="beyond-business__icon" src="./images/beyond-business-icon.png" alt="icon">
+              <p class="beyond-business__text">
+                Free cash deposits and withdrawals at Allpoint ATMs
+              </p>
+            </div>
+            <div class="beyond-business__item">
+              <img class="beyond-business__icon" src="./images/beyond-business-icon.png" alt="icon">
+              <p class="beyond-business__text">
+                Direct integrations with QuickBooks Online and Xero
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="your-cash">
+      <div class="container">
+        <div class="your-cash__inner">
+          <h2 class="section-title your-cash__title">
+            See your cash flow clear as day
+          </h2>
+          <p class="section-description your-cash__description">
+            Relay makes it easy to understand precisely what you’re earning, spending and saving so you can make the
+            smartest decisions for your business.
+          </p>
+        </div>
+      </div>
+      <div class="your-cash__advantages-box">
+        <div class="your-cash__advantage">
+          <div class="container">
+            <div class="your-cash__advantage-inner">
+              <div class="your-cash__advantage-info">
+                <h3 class="your-cash__advantage-title">
+                  Get the income overview
+                </h3>
+                <p class="your-cash__advantage-text">
+                  Collect income in one place to see what you’re working with. Consolidate all of your
+                  payments—including
+                  ACH transfers, wires, checks and payouts from tools like PayPal, Stripe, Square and more.
+                </p>
+              </div>
+              <div class="your-cash__advantage-image-box">
+                <picture class="your-cash__picture-box">
+                  <source type="image/webp" srcset="./images/cash-1.webp">
+                  <img class=".your-cash__picture" src="./images/cash-1.png" loading="lazy" alt="image">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="your-cash__advantage">
+          <div class="container">
+            <div class="your-cash__advantage-inner">
+              <div class="your-cash__advantage-info">
+                <h3 class="your-cash__advantage-title">
+                  Earmark the essentials
+                </h3>
+                <p class="your-cash__advantage-text">
+                  Use up to 20 checking accounts to organize and allocate income for things like day-to-day expenses and
+                  payroll. Automate the transfer of income into each account using dollar amounts or percentages.
+                </p>
+              </div>
+              <div class="your-cash__advantage-image-box">
+                <picture class="your-cash__picture-box">
+                  <source type="image/webp" srcset="./images/cash-2.webp">
+                  <img class=".your-cash__picture" src="./images/cash-2.png" loading="lazy" alt="image">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="your-cash__advantage">
+          <div class="container">
+            <div class="your-cash__advantage-inner">
+              <div class="your-cash__advantage-info">
+                <h3 class="your-cash__advantage-title">
+                  Save for the future
+                </h3>
+                <p class="your-cash__advantage-text">
+                  You can also use checking accounts to set up, separate and continually contribute to cash reserves for
+                  taxes, investments in your growth and unexpected emergencies.
+                </p>
+              </div>
+              <div class="your-cash__advantage-image-box">
+                <picture class="your-cash__picture-box">
+                  <source type="image/webp" srcset="./images/cash-3.webp">
+                  <img class=".your-cash__picture" src="./images/cash-3.png" loading="lazy" alt="image">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="your-cash__advantage">
+          <div class="container">
+            <div class="your-cash__advantage-inner">
+              <div class="your-cash__advantage-info">
+                <h3 class="your-cash__advantage-title">
+                  Feel in complete control
+                </h3>
+                <p class="your-cash__advantage-text">
+                  A crystal-clear picture of your cash flow helps you make more intelligent, more informed decisions
+                  about
+                  your money—no more overspending or overextending.
+                </p>
+              </div>
+              <div class="your-cash__advantage-image-box">
+                <picture class="your-cash__picture-box">
+                  <source type="image/webp" srcset="./images/cash-4.webp">
+                  <img class=".your-cash__picture" src="./images/cash-4.png" loading="lazy" alt="image">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      </div>
+    </section>
+    <div class="every-detail">
+      <picture class="every-detail-picture-box">
+        <source type="image/avif" srcset="./images/every-detail.avif">
+        <img class="every-detail-picture" src="./images/every-detail.jpeg" loading="lazy" alt="details decor image">
+      </picture>
+    </div>
+    <section class="on-the-money">
+      <div class="container">
+        <div class="on-the-money__inner">
+          <h2 class="section-title on-the-money__title">
+            What ‘on the money’ <span class="on-the-money__title-span">feels like</span>
+          </h2>
+          <div class="on-the-money__possibilities-box">
+            <div class="on-the-money__possibility">
+              <h3 class="on-the-money__possibility-title">
+                You know where every dollar is going
+              </h3>
+              <p class="on-the-money__possibility-text">
+                Take the grind out of expense tracking with ultra-detailed data. Relay cleans and standardizes vendor
+                names, pre-categorizes card purchases and keeps a record of team spending.
+              </p>
+            </div>
+            <div class="on-the-money__possibility">
+              <h3 class="on-the-money__possibility-title">
+                Bookkeeping doesn’t give you a headache
+              </h3>
+              <p class="on-the-money__possibility-text">
+                Relay directly syncs comprehensive data for in- and outgoing transactions to QuickBooks Online and Xero
+                for simple, speedy and meticulous bookkeeping.
+              </p>
+            </div>
+            <div class="on-the-money__possibility">
+              <h3 class="on-the-money__possibility-title">
+                You can delegate money management
+              </h3>
+              <p class="on-the-money__possibility-text">
+                Role-based user permissions allow your accountant, bookkeeper and team members to help with bookkeeping,
+                bill payments and other day-to-day banking tasks.
+              </p>
+            </div>
+            <div class="on-the-money__possibility">
+              <h3 class="on-the-money__possibility-title">
+                Tax season doesn’t keep you up at night
+              </h3>
+              <p class="on-the-money__possibility-text">
+                Picture it. All transactions are neatly reconciled at month-end. There’s no need to chase contractors
+                for W-9 forms. And you’ve been saving throughout the year for your tax bill.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <div class="decor-box-secure decor">
+      <picture class="decor__picture-box">
+        <source type="image/avif" srcset="./images/secure-img.avif">
+        <img class="decor__secure-img" src="./images/secure-img.jpeg" alt="secure">
+      </picture>
+    </div>
+    <section class="protected">
+      <div class="container">
+        <div class="protected__inner">
+          <h2 class="section-title protected__title">
+            Your money — protected
+          </h2>
+          <p class="protected__text">
+            Feel safe knowing that you’re FDIC insured up to $250,000 per business and covered by the Visa® Zero
+            Liability Protection Policy
+          </p>
+          <div class="protected__items-box">
+            <div class="protected__item">
+              <img class="protected__icon" src="./images/protected-icon.svg" alt="icon">
+              <p class="protected_item-text">
+                FDIC insured up to $250k
+              </p>
+            </div>
+            <div class="protected__item">
+              <img class="protected__icon" src="./images/protected-icon.svg" alt="icon">
+              <p class="protected_item-text">
+                Visa® Zero Liability Protection
+              </p>
+            </div>
+            <div class="protected__item">
+              <img class="protected__icon" src="./images/protected-icon.svg" alt="icon">
+              <p class="protected_item-text">
+                Two-factor authentication and biometric security
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="community">
+      <div class="container">
+        <div class="community__inner">
+          <h2 class="section-title community__title">
+            Kind words from our community
+          </h2>
+          <div class="community-slider">
+            <div class="community-slider__item">
+              <div class="community-slider__item-wrapper">
+                <div class="community-slider__img-box">
+                  <picture class="img-holder">
+                    <source type="image/webp" srcset="./images/slider-img.avif">
+                    <img class="community-img" src="./images/slider-img.jpeg" loading="lazy" width="448" height="420"
+                      alt="community">
+                  </picture>
+                </div>
+                <div class="community-slider__info-box">
+                  <p class="community_slider__text">
+                    "We have had a great experience with Relay and I plan to use this for my businesses moving forward.
+                    It makes it very easy to add accounts, cards, users, vendors, etc. I can separate our cash with
+                    certain projects or initiatives so that our budgets are already set. All around, very solid company
+                    that I look forward to working with in the coming years."
+                  </p>
+                  <div class="community-slider__author">
+                    <div class="community_-author-avatar-box"><img class="community-avatar-img"
+                        src="./images/avatar-1.jpeg" alt=""></div>
+                    <div class="community-autor-info">
+                      <div class="community__author-summary">
+                        <p class="community-author-name">
+                          Anthony Halsch
+                        </p>
+                        <p class="community-author-profession">
+                          CEO at RoxBox Containers & Modifications
+                        </p>
+                      </div>
+                      <img class="community__author-rating" src="./images/slider-rating.png" alt="rating">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="community-slider__item">
+              <div class="community-slider__item-wrapper">
+                <div class="community-slider__img-box">
+                  <picture class="img-holder">
+                    <source type="image/webp" srcset="./images/slider-img.avif">
+                    <img class="community-img" src="./images/slider-img.jpeg" loading="lazy" width="448" height="420"
+                      alt="community">
+                  </picture>
+                </div>
+                <div class="community-slider__info-box">
+                  <p class="community_slider__text">
+                    "We have had a great experience with Relay and I plan to use this for my businesses moving forward.
+                    It makes it very easy to add accounts, cards, users, vendors, etc. I can separate our cash with
+                    certain projects or initiatives so that our budgets are already set. All around, very solid company
+                    that I look forward to working with in the coming years."
+                  </p>
+                  <div class="community-slider__author">
+                    <div class="community_-author-avatar-box"><img class="community-avatar-img"
+                        src="./images/avatar-1.jpeg" alt=""></div>
+                    <div class="community-autor-info">
+                      <div class="community__author-summary">
+                        <p class="community-author-name">
+                          Anthony Halsch
+                        </p>
+                        <p class="community-author-profession">
+                          CEO at RoxBox Containers & Modifications
+                        </p>
+                      </div>
+                      <img class="community__author-rating" src="./images/slider-rating.png" alt="rating">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="community-slider__item">
+              <div class="community-slider__item-wrapper">
+                <div class="community-slider__img-box">
+                  <picture class="img-holder">
+                    <source type="image/webp" srcset="./images/slider-img.avif">
+                    <img class="community-img" src="./images/slider-img.jpeg" loading="lazy" width="448" height="420"
+                      alt="community">
+                  </picture>
+                </div>
+                <div class="community-slider__info-box">
+                  <p class="community_slider__text">
+                    "We have had a great experience with Relay and I plan to use this for my businesses moving forward.
+                    It makes it very easy to add accounts, cards, users, vendors, etc. I can separate our cash with
+                    certain projects or initiatives so that our budgets are already set. All around, very solid company
+                    that I look forward to working with in the coming years."
+                  </p>
+                  <div class="community-slider__author">
+                    <div class="community_-author-avatar-box"><img class="community-avatar-img"
+                        src="./images/avatar-1.jpeg" alt=""></div>
+                    <div class="community-autor-info">
+                      <div class="community__author-summary">
+                        <p class="community-author-name">
+                          Anthony Halsch
+                        </p>
+                        <p class="community-author-profession">
+                          CEO at RoxBox Containers & Modifications
+                        </p>
+                      </div>
+                      <img class="community__author-rating" src="./images/slider-rating.png" alt="rating">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="ready">
+      <div class="container">
+        <div class="ready__inner">
+          <h2 class="section-title ready__title">
+            Ready to be on the money?
+          </h2>
+          <button class="act-btn ready__btn">
+            Let's bank
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__nav">
+          <div class="logo-box">
+            <img class="footer__logo-img" src="./images/footer-logo.svg" alt="footer-logo">
+          </div>
+          <div class="footer__nav-item item-nav">
+            <h5 class="item-nav__title">
+              What is Relay
+            </h5>
+            <ul class="item-nav__list">
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Business checking
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Accounts payable
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Pricing
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Integrations
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Xero
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  QuickBooks Online
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Gusto
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Plaid & Yodlee
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-item item-nav">
+            <h5 class="item-nav__title">
+              Accountants & Bookkeepers
+            </h5>
+            <ul class="item-nav__list">
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Client banking
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Gearing Up
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Get certified
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Guides
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Accounts payable
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Data security
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Growth in 2021
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-item item-nav">
+            <h5 class="item-nav__title">
+              Resources
+            </h5>
+            <ul class="item-nav__list">
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Everyday business blog
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Advisor hub
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  FAQs
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Bi-weekly webinar
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Support center
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Banking for real estate investors
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Banking for e-commerce
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Banking for agencies
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-item item-nav">
+            <h5 class="item-nav__title">
+              Company
+            </h5>
+            <ul class="item-nav__list">
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  About us
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Customer stories
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Careers
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Partner with us
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Contact us
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Why Relay
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__nav-item item-nav">
+            <h5 class="item-nav__title">
+              Legal
+            </h5>
+            <ul class="item-nav__list">
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Terms of Service
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Deposit Agreement
+                </a>
+              </li>
+              <li class="item-nav__list-item">
+                <a class="item-nav__link" href="#">
+                  Cardholder Agreement
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__info">
+          <div class="footer__social">
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./images/youtube.svg" alt="youtube">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./images/instagram.svg" alt="instagram">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./images/facebook.svg" alt="facebook">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./images/linkedIn.svg" alt="linkedIn">
+            </a>
+            <a class="footer__social-link" href="#">
+              <img class="footer__social-img" src="./images/x.svg" alt="X">
+            </a>
+          </div>
+          <p class="footer__copy">
+            Relay Financial Technologies, Inc. © 2023
+          </p>
+          <div class="footer__media">
+            <a class="footer__madia-link" href="#">
+              <img class="footer__media-img" src="./images/appStore.png" alt="appStore">
+            </a>
+            <a class="footer__madia-link" href="#">
+              <img class="footer__media-img" src="./images/googlePlay.png" alt="googlePlay">
+            </a>
+          </div>
+          <p class="warning-not-a-bank">
+            Relay is a financial technology company, not a bank. Banking services provided by Thread Bank; Member FDIC.
+            The Relay Visa® Debit Card is issued by Thread Bank pursuant to a license from Visa U.S.A. Inc. and may be
+            used everywhere Visa debit cards are accepted.
+          </p>
+          <p class="warning-payment-services">
+            Payment services are provided by The Currency Cloud Limited. Registered in England No. 06323311. Registered
+            Office: The Steward Building 1st Floor, 12 Steward Street London E1 6FQ. The Currency Cloud Limited is
+            authorised by the Financial Conduct Authority under the Electronic Money Regulations 2011 for the issuing of
+            electronic money (FRN: 900199). In the US Currency Cloud operates in partnership with CFSB. CFSB fully owns
+            the bank program and services are provided by The Currency Cloud Inc.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://kit.fontawesome.com/8dc661ff73.js" crossorigin="anonymous"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
